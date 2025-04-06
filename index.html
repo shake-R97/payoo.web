@@ -34,21 +34,26 @@
      <div class="hero mt-[-60px]  ">
         <div class="hero-content ">
           
-          <div class="card bg-base-100 w-[320px] mx-auto lg:w-[700px] shrink-0 shadow-2xl">
-            <div class="card-body ">
-              <fieldset class="fieldset">
-                <label class="fieldset-label">Account Number</label>
-                <input type="number" class="input w-[100%] lg:w-[90%]" placeholder="Your AC Number" />
-                <label class="fieldset-label">Password</label>
-                <input type="text" class="input w-[100%] lg:w-[90%]" placeholder="Password" />
-                <div><a class="link link-hover">Forgot password?</a></div>
-               </div>
-                <button class="btn btn-neutral mt-4">Login</button>
-              </fieldset>
+            <form action="">
+                <div class="card bg-base-100 mx-auto w-[320px]  lg:w-[700px] shrink-0 shadow-2xl">
+                    <div class="card-body ">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label">Account Number</label>
+                        <input type="number" class="input w-[100%] lg:w-[90%]" placeholder="Your AC Number" required />
+                        <label class="fieldset-label">Password</label>
+                        <input type="text" class="input w-[100%] lg:w-[90%]" placeholder="Password" required/>
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                       </div>
+                        <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                      </fieldset>
+                    </div>
+            </form>
             </div>
           </div>
-        </div>
-      </div>
+        
+     
     </section>
+
+    <script src="./script/login.js"></script>
 </body>
 </html>

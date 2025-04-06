@@ -5,9 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAYOO WEV-APPLICATION</title>
     <!-- DAISY UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- TAILWIND CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+        }
+      </style>
+
+
 </head>
-<body>
-    
+<body class="bg-slate-300">
+    <!-- header Section -->
+     
+     <section class=" bg-white w-[95%] min-h-screen mx-auto lg:w-[75%]">
+     <header class="">
+        <nav class=" flex justify-center items-center">
+            <img class="mt-40 lg:w-[400px]" src="/assets/bg.png" alt="">
+            <img class="absolute" src="/assets/Group.png" alt="">
+        </nav>
+     </header>
+
+     <!-- login form -->
+     <div class="hero mt-[-60px]  ">
+        <div class="hero-content ">
+          
+          <div class="card bg-base-100 w-[320px] mx-auto lg:w-[700px] shrink-0 shadow-2xl">
+            <div class="card-body ">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account Number</label>
+                <input type="number" class="input w-[100%] lg:w-[90%]" placeholder="Your AC Number" />
+                <label class="fieldset-label">Password</label>
+                <input type="text" class="input w-[100%] lg:w-[90%]" placeholder="Password" />
+                <div><a class="link link-hover">Forgot password?</a></div>
+               </div>
+                <button class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>

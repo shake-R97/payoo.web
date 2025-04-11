@@ -6,7 +6,7 @@ document.getElementById('login-btn')
     const accountNumber = document.getElementById('account-number').value;
     
     const pin = document.getElementById('pin').value;
-    console.log(pin);
+
 
     if( accountNumber.length === 11){
 
